@@ -1,0 +1,24 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'animations';
+@import 'navbar';
+@import 'footer';
+
+header {
+    height: 100vh;
+    background-color: $primary;
+}
+
+.inspo-container {
+    background: url('src/images/photo+6.jpeg');
+    background-position-y: 33%;
+}
+
+.arrow {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    border-left: 1rem solid $light;
+    border-bottom: 1rem solid $light;
+    transform: rotate(-45deg);
+    transition: transform 100ms ease-in-out;
+}
