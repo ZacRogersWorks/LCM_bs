@@ -1,16 +1,27 @@
+$primary: #1076b9;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'animations';
 @import 'navbar';
 @import 'footer';
+@import 'give';
+@import 'serve';
+@import 'lighthouse';
+@import 'missionhouse';
+@import 'gospelhouse';
+@import 'gracehouse';
 
-header {
-    height: 100vh;
-    background-color: $primary;
+h1, h2, h3, h4, h5 {
+    font-family: 'Helvetica Neue',' Helvetica', sans-serif;
 }
 
+
 .inspo-container {
-    background: url('src/images/photo+6.jpeg');
-    background-position-y: 33%;
+    background: url('src/img/Lighthouse_Wenatchee.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 .arrow {
@@ -21,4 +32,14 @@ header {
     border-bottom: 1rem solid $light;
     transform: rotate(-45deg);
     transition: transform 100ms ease-in-out;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    background: none;
+
+    &-header {
+        border-radius: inherit;
+    }
 }

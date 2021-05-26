@@ -10,67 +10,65 @@
 </head>
 
 <body>
-    <header class="px-2 px-md-5">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid mt-3">
-                <a class="navbar-brand fs-1 fw-bold" href="#"><img src="src/images/Light-House CM.png"
-                        alt="Lighthouse Christian Ministries" width="70"> LCM</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end fs-5" id="main_nav">
-                    <ul class="navbar-nav d-flex">
-                        <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Give </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Serve </a></li>
-                        <li class="nav-item dropdown" class="myDropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-exanded="true">
-                                About </a>
-                            <ul class="dropdown-menu">
-                                <li> <a class="dropdown-item" href="#" id="myDropdown"> Ministries &raquo;
-                                    </a>
-                                    <ul class="submenu dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Lighthouse</a></li>
-                                        <li><a class="dropdown-item" href="#">Gospel House</a></li>
-                                        <li><a class="dropdown-item" href="#">Grace House</a></li>
-                                        <li><a class="dropdown-item" href="#">Mission House</a></li>
-                                        <li><a class="dropdown-item" href="#">King's Garden Pre-School</a></li>
-                                    </ul>
-                                </li>
-                                <li class="my-nav__item__submenu"> <a class="dropdown-item" href="#"> Vision
-                                    </a>
-                                <li class="my-nav__item__submenu"> <a class="dropdown-item" href="#"> Contact
-                                    </a>
-                            </ul>
-                        </li>
-                    </ul>
+    <header class="px-2 px-md-5 bg-primary">
+        <!--Hero-container added to have header at 100VH for Home page, while preserving header styles for use on other pages-->
+        <div class="hero-container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid mt-3">
+                    <a class="navbar-brand fs-1 fw-bold" href="#"><img src="src/images/Light-House CM.png"
+                            alt="Lighthouse Christian Ministries" width="70"> LCM</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end fs-5" id="main_nav">
+                        <ul class="navbar-nav d-flex">
+                            <li class="nav-item active"> <a class="nav-link" href="/index.html">Home </a> </li>
+                            <li class="nav-item"><a class="nav-link" href="/give.html"> Give </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/serve.html"> Serve </a></li>
+                            <li class="nav-item dropdown" class="myDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-exanded="true">
+                                    About </a>
+                                <ul class="dropdown-menu">
+                                    <li> <a class="dropdown-item" href="#" id="myDropdown"> Ministries &raquo;
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="/wenatchee_lighthouse.html">Lighthouse</a></li>
+                                            <li><a class="dropdown-item" href="/wenatchee_gospel_house.html">Gospel House</a></li>
+                                            <li><a class="dropdown-item" href="/wenatchee_grace_house.html">Grace House</a></li>
+                                            <li><a class="dropdown-item" href="/wenatchee_mission_house.html">Mission House</a></li>
+                                            <li><a class="dropdown-item" href="/wenatchee_kings_garden_preschool.html">King's Garden Pre-School</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="my-nav__item__submenu"> <a class="dropdown-item" href="#"> Vision
+                                        </a>
+                                    <li class="my-nav__item__submenu"> <a class="dropdown-item" href="#"> Contact
+                                        </a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- navbar-collapse.// -->
                 </div>
-                <!-- navbar-collapse.// -->
-            </div>
-            <!-- container-fluid.// -->
-        </nav>
-        <div class="container col-xxl-10 py-1 py-md-2 py-lg-5 ">
-            <div class="row flex-lg-row-reverse align-items-center justify-content-end py-lg-2">
-                <div class="col-lg-8 d-flex flex-column align-items-xs-center align-items-md-startg gy-5">
-                    <h1 class="display-1 fw-bold lh-1 mb-3 text-center text-lg-start">MEETING NEEDS</h1>
-                    <p class="display-5 lead text-center text-lg-start">365 DAYS OF THE YEAR</p>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-3">
-            <div class="row d-flex justify-content-around gy-3 px-5">
-                <button type="button" class="btn btn-light btn-lg px-5 mx-5 col">IF YOU
-                    <strong>NEED</strong> HELP</button>
-                <button type="button" class="btn btn-light btn-lg px-5 mx-5 col">IF YOU <strong>CAN</strong>
-                    HELP</button>
-            </div>
-            <div class="row ">
-                <div class="col d-flex justify-content-center py-5">
-                    <span class="arrow bounceOutDown " id="scrollIndicator"></span>
+                <!-- container-fluid.// -->
+            </nav>
+            <div class="container col-xxl-10 py-1 py-md-2 py-lg-5">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-end py-lg-2">
+                    <div class="col-lg-8 d-flex flex-column align-items-center align-items-md-start gy-5">
+                        <h1 class="display-1 fw-bold lh-1 mb-3 text-center text-md-start">REACHING PEOPLE</h1>
+                        <p class="display-5">CHANGING LIVES</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="container mt-3 pb-2">
+                <div class="row d-flex justify-content-around gy-3 pb-5">
+                    <button type="button" class="btn btn-light btn-lg p-md-4 mx-5 col">IF YOU
+                        <strong>NEED</strong> HELP</button>
+                    <button type="button" class="btn btn-light btn-lg p-md-4 mx-5 col">IF YOU <strong>CAN</strong>
+                        HELP</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -79,8 +77,8 @@
             <div class="inspo-container container-fluid p-5">
                 <div class="row justify-content-center py-5">
                     <div class="col-md-8 my-5 text-light">
-                        <h3 class="h2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id.</h3>
-                        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum est facere
+                        <h3 class="h2 display-2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id.</h3>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum est facere
                             commodi accusamus suscipit quod maiores, molestias quam praesentium iure cum, harum
                             repudiandae voluptatibus totam! Voluptatibus ab quia odio sunt nostrum reprehenderit sequi
                             fugiat perferendis, nemo quos officiis autem!</p>
@@ -89,7 +87,7 @@
             </div>
 
         </section>
-        <section class="emailSignup">
+        <section class="emailSignup bg-light">
             <div class="container p-5">
                 <div class="row">
                     <div class="col"></div>
@@ -98,7 +96,7 @@
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-6">
-                        <div class="input-group mt-5 p-5 bg-dark">
+                        <div class="input-group mt-5 p-4 p-md-5 bg-dark">
                             <input type="text" class="form-control" placeholder="Email Address"
                                 aria-label="Recipient's username" aria-describedby="button-addon2">
                             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign-Up</button>
@@ -107,40 +105,38 @@
                 </div>
             </div>
         </section>
-        <section class="cards bg-primary">
-            <div class="container py-5">
+        <section class="cards">
+            <div class="container py-5 g-0">
                 <div class="row d-flex align-items-center mb-5">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="card">
-                            <div class="card-header display-5">
-                                Social Media
+                            <div class="card-header display-5 border-bottom bg-transparent">
+                                <h2>SOCIAL MEDIA</h2>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                                    ratione vero optio dignissimos, hic distinctio nulla fuga dolor voluptatem deserunt.
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore at, natus nostrum sed ipsam corporis minima exercitationem cumque vitae veniam architecto quos amet hic nobis blanditiis illo est. Tempore minus nostrum voluptatem? Possimus temporibus iusto aut, obcaecati enim, omnis deserunt, laboriosam minus quae nihil facilis ipsa molestiae expedita ab pariatur.
                                 </p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="src/images/IMG_1462.jpeg" alt="" width="100%" height="auto">
+                    <div class="col-md-6">
+                        <img src="src/img/Lighthouse_Social_Media.jpeg" alt="" width="100%" height="auto">
                     </div>
                 </div>
                 <div class="row d-flex align-items-center flex-column-reverse flex-md-row">
-                    <div class="col-md-4">
-                        <img src="src/images/IMG_1708.jpeg" alt="" width="100%" height="auto">
+                    <div class="col-md-6">
+                        <img src="src/img/Lighthouse_Happy_Mother_Child.jpeg" alt="" width="100%" height="auto">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="card">
-                            <div class="card-header display-5">
-                                Get Involved
+                            <div class="card-header display-5 border-bottom bg-transparent">
+                                <h2>GET INVOLVED</h2>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-                                    ratione vero optio dignissimos, hic distinctio nulla fuga dolor voluptatem deserunt.
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus temporibus aliquid exercitationem cumque reiciendis sed? Minus nostrum recusandae placeat rerum unde nam dolores magni beatae, fugiat sint odit cupiditate eius labore consequuntur quae veniam aspernatur repudiandae voluptas error temporibus?
                                 </p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -149,13 +145,13 @@
                 </div>
             </div>
         </section>
-        <section class="give">
-            <div class="container">
-                <div class="row my-5">
+        <section class="give bg-light">
+            <div class="container py-5">
+                <div class="row">
                     <div class="col d-flex flex-column align-items-center">
-                        <h4>
-                            Please consider donating.
-                        </h4>
+                        <h3>
+                            DONATE
+                        </h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <button class="btn btn-primary btn-large px-5 py-3 display-2">GIVE</button>
                     </div>
@@ -169,20 +165,18 @@
                 <div class="col-4 col-md-3 me-3 d-flex flex-column align-items-start align-items-sm-center">
                     <h3>Ministries</h3>
                     <ul>
-                        <li><a href="#">Lighthouse</a></li>
-                        <li><a href="#">Gospel Gardens</a></li>
-                        <li><a href="#">King's Garden PreSch</a></li>
-                        <li><a href="#">Gospel House</a></li>
-                        <li><a href="#">Grace House</a></li>
-                        <li><a href="#">Mission House</a></li>
-                        <li><a href="#">Discipleship Houses</a></li>
+                        <li><a href="/wenatchee_lighthouse.html">Lighthouse</a></li>
+                        <li><a href="/wenatchee_gospel_house">Gospel House</a></li>
+                        <li><a href="/wenatchee_grace_house">Grace House</a></li>
+                        <li><a href="/wenatchee_mission_house.html">Mission House</a></li>
+                        <li><a href="/wenatchee_kings_garden_preschool.html">King's Garden PreSch</a></li>
                     </ul>
                 </div>
                 <div class="col-8 col-md-3 me-3 d-flex flex-column align-items-start align-items-sm-center">
-                    <h3>Volunteer</h3>
+                    <h3>Support</h3>
                     <ul>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Donate</a></li>
+                        <li><a href="/serve.html">Volunteer</a></li>
+                        <li><a href="/give.html">Donate</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 d-flex flex-column align-items-start align-items-sm-center">

@@ -19,13 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         let menuBtn = document.querySelector('#myDropdown')
-        
-        menuBtn.addEventListener('click', function (e) {
+        menuBtn.addEventListener('mouseover', function (e) {
 
-            let nextEl = menuBtn.nextElementSibling;
-            if (nextEl && nextEl.classList.contains('submenu')) {
+            let nextEl = document.querySelector('.submenu');
+            if (nextEl) {
                 // prevent opening link if link needs to open dropdown
-                e.preventDefault();
+                // e.preventDefault();
 
                 if (nextEl.style.display == 'block') {
                     nextEl.style.display = 'none';
