@@ -8,6 +8,7 @@
     .dropdown-menu {
         position: absolute;
         left: -90% !important;
+		border: none;
     }
 
 	.dropdown-menu li{
@@ -16,8 +17,9 @@
 	.submenu{ 
 		display: none;
 		position: absolute;
-		left: -140% !important; 
-        top:-9px;
+		left: -137.5% !important; 
+        top:-8px;
+		border: none;
 	}
 	// .dropdown-menu .submenu-left{ 
 	// 	right:100%; left:auto;
@@ -35,6 +37,10 @@
 
 .dropdown-menu .dropdown-menu{
 		margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+}
+
+.submenu {
+	border: none;
 }
 
 }	

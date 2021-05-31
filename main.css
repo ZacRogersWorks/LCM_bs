@@ -3402,7 +3402,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -10786,6 +10786,7 @@ textarea.form-control-lg {
   .dropdown-menu {
     position: absolute;
     left: -90% !important;
+    border: none;
   }
 
   .dropdown-menu li {
@@ -10795,8 +10796,9 @@ textarea.form-control-lg {
   .submenu {
     display: none;
     position: absolute;
-    left: -140% !important;
-    top: -9px;
+    left: -137.5% !important;
+    top: -8px;
+    border: none;
   }
 
   .dropdown-menu > li:hover {
@@ -10814,6 +10816,10 @@ textarea.form-control-lg {
     margin-left: 0.7rem;
     margin-right: 0.7rem;
     margin-bottom: 0.5rem;
+  }
+
+  .submenu {
+    border: none;
   }
 }
 /* ============ small devices .end// ============ */
@@ -10876,14 +10882,26 @@ footer {
   background-size: cover;
 }
 
+.free-food-section-1 {
+  background: url("src/img/Lighthouse_Receive_Donations.jpeg");
+  padding-top: 5rem;
+  background-position-y: 50%;
+  background-size: cover;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Helvetica Neue", " Helvetica", sans-serif;
+}
+
+img {
+  border-radius: 5px;
 }
 
 .inspo-container {
   background: url("src/img/Lighthouse_Wenatchee.jpeg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .arrow {

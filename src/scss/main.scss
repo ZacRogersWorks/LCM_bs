@@ -1,4 +1,5 @@
 $primary: #1076b9;
+$dropdown-border-radius: 0;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
@@ -13,9 +14,14 @@ $primary: #1076b9;
 @import 'gospelhouse';
 @import 'gracehouse';
 @import 'kingsgarden';
+@import 'freefood';
 
 h1, h2, h3, h4, h5 {
     font-family: 'Helvetica Neue',' Helvetica', sans-serif;
+}
+
+img {
+    border-radius: 5px;
 }
 
 
@@ -23,6 +29,7 @@ h1, h2, h3, h4, h5 {
     background: url('src/img/Lighthouse_Wenatchee.jpeg');
     background-position: center;
     background-size: cover;
+    background-attachment:fixed;
 }
 
 .arrow {
