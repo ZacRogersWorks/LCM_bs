@@ -1,5 +1,7 @@
 $primary: #1076b9;
+$secondary: #faa83d;
 $dropdown-border-radius: 0;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
@@ -15,6 +17,8 @@ $dropdown-border-radius: 0;
 @import 'gracehouse';
 @import 'kingsgarden';
 @import 'freefood';
+@import 'contact';
+@import 'vision';
 
 h1, h2, h3, h4, h5 {
     font-family: 'Helvetica Neue',' Helvetica', sans-serif;
@@ -24,6 +28,16 @@ img {
     border-radius: 5px;
 }
 
+select {
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+}
+
+.active {
+    text-decoration:underline;
+}
 
 .inspo-container {
     background: url('src/img/Lighthouse_Wenatchee.jpeg');
@@ -50,4 +64,25 @@ img {
     &-header {
         border-radius: inherit;
     }
+}
+
+.fixedDonate {
+    position: fixed;
+    z-index:99;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    
+    a {
+        text-decoration: none;
+        color: $light;
+    }
+}
+
+.fixedDonateBtn {
+    position: fixed;
+    z-index:99;
+    right: 1rem;
+    bottom: 1rem;
 }
