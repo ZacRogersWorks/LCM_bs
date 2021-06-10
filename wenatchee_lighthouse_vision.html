@@ -6,14 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Volunteer at Wenatchee Grace House</title>
 </head>
 
 <body>
-    <header class="px-2 px-md-5 pb-3 bg-primary">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rellax" data-rellax-speed="-1">
+    <div class="overflow-hidden">
+    <header class="px-2 px-md-5 pb-3 bg-light">
+        <!-- <div class="marquee bg-branding">
+            <div class="marquee__inner" aria-hidden="true">
+                <span>LIGHTHOUSE CHRISTIAN MINISTRIES</span>
+                <span>LIGHTHOUSE CHRISTIAN MINISTRIES</span>
+            </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid mt-3">
-                <a class="navbar-brand fs-1 fw-bold" href="index.html"><img src="src/images/Light-House CM.png"
+                <a class="navbar-brand fs-1 fw-bold" href="index.html"><img src="src/img/Light-House CM.png"
                         alt="Lighthouse Christian Ministries" width="70"> LCM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -59,6 +74,20 @@
             </div>
             <!-- container-fluid.// -->
         </nav>
+
+        <a class="h3" href="give.html">
+            <div class="fixedDonate d-md-none bg-secondary py-2 pb-3 pop-up">
+
+                DONATE
+
+            </div>
+        </a>
+        <div class="fixedDonateBtn d-none d-md-block pop-in">
+            <a class="btn btn-secondary btn-large fs-5" href="give.html">
+                DONATE
+            </a>
+        </div>
+
         <div class="container-fluid">
             <div class="row">
                 <h1 class="col-12 fw-bold">VISION</h1>
@@ -68,7 +97,7 @@
     <main>
         <div class="container-fluid vision-section-1">
             <div class="row py-3">
-                <div class="col col-md-8 p-5 text-light rellax" data-rellax-speed="2">
+                <div class="col col-md-8 p-5 text-light rellax autoFade" data-rellax-speed="2">
                     <h3 class="display-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
                         placeat.</h3>
                     <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ut repellat! Inventore
@@ -77,7 +106,7 @@
                         quae voluptate nulla officia ad pariatur soluta impedit necessitatibus maiores, veniam incidunt
                         culpa! Consequatur distinctio ex natus accusantium accusamus repellendus quos vitae! Ipsa.</p>
                 </div>
-                <div class="col col-lg-4 p-5 text-light d-flex flex-column rellax" data-rellax-speed="-1">
+                <div class="col col-lg-4 p-5 text-light d-flex flex-column rellax autoFade2" data-rellax-speed="1">
                     <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab, distinctio nulla obcaecati iusto voluptates atque ipsum ducimus nostrum a soluta aperiam magnam veritatis ullam tenetur! Soluta ea totam quam.</p>
                         
                 </div>
@@ -126,7 +155,7 @@
     <footer class="bg-dark text-light">
         <div class="container pt-5">
             <div class="row mx-auto g-5 d-flex justify-content-around">
-                <div class="col-4 col-md-3 me-3 d-flex flex-column align-items-start align-items-sm-center">
+                <div class="col-12 col-lg-3 me-3 d-flex flex-column align-items-start align-items-lg-center">
                     <h3>Ministries</h3>
                     <ul>
                         <li><a href="wenatchee_lighthouse.html">Lighthouse</a></li>
@@ -136,32 +165,34 @@
                         <li><a href="wenatchee_kings_garden_preschool.html">King's Garden PreSch</a></li>
                     </ul>
                 </div>
-                <div class="col-8 col-md-3 me-3 d-flex flex-column align-items-start align-items-sm-center">
+                <div class="col-12 col-lg-3 me-3 d-flex flex-column align-items-start align-items-lg-center">
                     <h3>Support</h3>
                     <ul>
                         <li><a href="serve.html">Volunteer</a></li>
                         <li><a href="give.html">Donate</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3 d-flex flex-column align-items-start align-items-sm-center">
+                <div class="col-12 col-lg-3 d-flex flex-column align-items-start align-items-lg-center">
                     <h3>About</h3>
                     <ul>
                         <li><a href="#">Vision</a></li>
-                        <li><a href="#">Our Story</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center py-3 text-center">
-                Copyright 2021 Lighthouse Christian Ministries<br>
-                Website by Zac Rogers
+            <div class="row py-5">
+                <p class="text-start text-md-center">Copyright 2021 Lighthouse Christian Ministries<br>
+                Website by <a class="light-link" href="zacrogers.works" target="_blank">Zac Rogers</a>
+            </p>
             </div>
         </div>
+        <div class="my-3 d-md-none"></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="src/js/index.js" rel="text/js"></script>
     <script src="src/js/rellax.min.js" rel="text/js"></script>
     <script>let rellax = new Rellax('.rellax');</script>
+    </div>
 </body>
 
 </html>

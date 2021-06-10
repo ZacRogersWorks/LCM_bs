@@ -1,13 +1,13 @@
-$primary: #1076b9;
-$secondary: #faa83d;
+// $primary: #1076b9;
+// $secondary: #faa83d;
+$primary: #1773dc;
+$secondary: #d11946;
 $dropdown-border-radius: 0;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
-@import 'animations';
-@import 'navbar';
 @import 'footer';
 @import 'give';
 @import 'serve';
@@ -19,6 +19,8 @@ $dropdown-border-radius: 0;
 @import 'freefood';
 @import 'contact';
 @import 'vision';
+@import 'animations';
+@import 'navbar';
 
 h1, h2, h3, h4, h5 {
     font-family: 'Helvetica Neue',' Helvetica', sans-serif;
@@ -35,15 +37,47 @@ select {
 	appearance: none;
 }
 
+header {
+    position: relative;
+}
+
+.light-link {
+    color: $light;
+}
+
+.dark-link {
+    color: $dark;
+}
+
 .active {
     text-decoration:underline;
 }
 
-.inspo-container {
+.inspo-container{
     background: url('src/img/Lighthouse_Wenatchee.jpeg');
-    background-position: center;
+    padding-top: 5rem;
+    background-position-y: 50%;
     background-size: cover;
-    background-attachment:fixed;
+}
+
+
+.help-btn {
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &:active {
+    transform: scale(.9);
+    }
+}
+
+.cross {
+    top: 500px;
+    right: -92px;
+    position: absolute;
+    mix-blend-mode: difference;
 }
 
 .arrow {
@@ -71,13 +105,23 @@ select {
     z-index:99;
     left:0;
     right:0;
-    bottom:0;
     text-align: center;
-    
-    a {
-        text-decoration: none;
+    line-height: 2rem;
+    text-decoration: none;
+    background-color: $secondary;
+    color: $light;
+    transition: transform .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #bb334a;
         color: $light;
     }
+
+    &:focus {
+        outline: 0;
+        box-shadow: $btn-focus-box-shadow;
+      }
 }
 
 .fixedDonateBtn {
@@ -85,4 +129,21 @@ select {
     z-index:99;
     right: 1rem;
     bottom: 1rem;
+    color: $light;
 }
+
+
+@media screen and (max-width: 800px) {
+    .lighthouse-section-1,
+    .kingsgarden-section-1,
+    .gospelhouse-section-1
+     {
+        background-position-x: 30%;
+    }
+    .free-food-section-1,
+    .serve-section-1,
+    .gracehouse-section-1,
+    .give-section-1 {
+        background-position-x: 60%
+    }
+  }

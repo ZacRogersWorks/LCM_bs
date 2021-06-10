@@ -1,3 +1,23 @@
+nav {
+    position: relative;
+}
+
+.navbar {
+	z-index: 99;
+}
+
+.bg-branding {
+    position: absolute;
+    left: 0;
+	top: -13px;
+    font-size: 6rem;
+    color: white;
+    z-index: 1;
+	font-weight:bolder;
+	line-height: 5.8rem;
+	opacity: 10%;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
