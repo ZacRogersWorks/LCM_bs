@@ -21,7 +21,7 @@
     <div class="overflow-hidden">
         <header class="px-2 px-md-5 bg-light">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid mt-3">
+                <div class="container-fluid">
                     <a class="navbar-brand fs-1 fw-bold" href="index.html"><img src="src/img/Light-House CM.png"
                             alt="Lighthouse Christian Ministries" width="70"> LCM</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
@@ -33,7 +33,7 @@
                             <li class="nav-item active"> <a class="nav-link" href="index.html">Home </a> </li>
                             <li class="nav-item"><a class="nav-link" href="give.html"> Give </a></li>
                             <li class="nav-item"><a class="nav-link" href="serve.html"> Serve </a></li>
-                            <li class="nav-item dropdown" class="myDropdown">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                                     aria-exanded="true">
                                     About </a>
@@ -75,41 +75,45 @@
                 </div>
                 <!-- container-fluid.// -->
             </nav>
-            <a class="h3 fixedDonate pop-up d-md-none py-2 pb-3" href="give.html">
-                    DONATE
+            <a class="fixedDonate pop-up d-md-none py-2 pb-3" href="give.html">
+                DONATE
             </a>
             <div class="fixedDonateBtn d-none d-md-block pop-in">
                 <a class="btn btn-secondary btn-large fs-5" href="give.html">
                     DONATE
                 </a>
             </div>
-
-            <div class="container col-xxl-10 py-1 py-md-2 py-lg-5 hero autoFade">
-                <div class="row flex-lg-row-reverse align-items-center justify-content-end py-lg-2">
-                    <div class="col-lg-8 d-flex flex-column align-items-center align-items-md-start gy-5 rellax"
-                        data-rellax-speed="3">
-                        <h1 class="display-1 fw-bold lh-1 mb-3 text-center text-md-start">REACHING PEOPLE</h1>
-                        <p class="display-5">CHANGING LIVES</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-3 pb-2 autoFade2">
-                <div class="row d-flex justify-content-around gy-3 pb-5 rellax " data-rellax-speed="1">
-                    <a href="if_you_need_help.html" class="help-btn btn btn-dark btn-lg p-md-4 mx-5 col-12 col-md">IF
-                        YOU
-                        <strong>NEED</strong> HELP</a>
-                    <a href="serve.html" class="help-btn btn btn-dark btn-lg p-md-4 mx-5 col-12 col-md">IF YOU
-                        <strong>CAN</strong>
-                        HELP</a>
-                </div>
-            </div>
         </header>
         <main>
+            <section class="hero bg-light">
+                <div class="container full-page d-flex flex-column justify-content-center">
+                    <div class="container col-xxl-10 py-1 py-md-2 py-lg-5 hero autoFade">
+                        <div class="row flex-lg-row-reverse align-items-center justify-content-end py-lg-2">
+                            <div class="col-lg-8 d-flex flex-column align-items-center align-items-md-start gy-5 rellax screaming"
+                                data-rellax-speed="3">
+                                <h1 class="display-1 fw-bold lh-1 mb-3 text-center text-md-start">Reaching People</h1>
+                                <p class="display-5">Changing Lives</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mb-5 pb-2 autoFade2">
+                        <div class="row d-flex justify-content-around gy-3 pb-5 rellax " data-rellax-speed="1">
+                            <a href="if_you_need_help.html"
+                                class="need-help btn btn-dark btn-lg p-md-4 mx-5 col-12 col-md">IF
+                                YOU
+                                <strong>NEED</strong> HELP</a>
+                            <a href="serve.html" class=" can-help btn btn-lg p-md-4 mx-5 col-12 col-md">IF YOU
+                                <strong>CAN</strong>
+                                HELP</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="story position-relative">
-                <div class="inspo-container container-fluid p-5">
+                <div class="inspo-container container-fluid p-5 full-page-no-header">
                     <div class="row justify-content-center mt-5 pt-5">
-                        <div class="col-md-8 mt-5 pt-5 text-light rellax" data-rellax-speed="2">
-                            <h3 class="h2 display-2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <div class="col-md-8 mt-5 pt-5 text-light rellax" data-rellax-speed="1">
+                            <h3 class="h2 display-2 mt-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Culpa,
                                 id.</h3>
                             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum est facere
@@ -136,7 +140,7 @@
                             quisquam.</h3>
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <div class="col-12 col-lg-6 bg-dark px-5 py-3">
+                        <div class="col-12 col-lg-6 bg-dark px-5 pb-3">
                             <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form
@@ -147,7 +151,7 @@
                                         <div class="mc-field-group">
                                             <label class="form-label text-light my-3" for="mce-EMAIL">Email Address
                                             </label>
-                                            <input type="email" value="" name="EMAIL"
+                                            <input type="email" value="" name="EMAIL" placeholder="Email Address"
                                                 class="required email form-control" id="mce-EMAIL">
                                         </div>
                                         <div id="mce-responses" class="clear">
@@ -173,7 +177,8 @@
                 <div class="container py-5 g-0">
                     <div class="row mb-5 d-flex align-items-center flex-column-reverse flex-md-row">
                         <div class="col-md-6">
-                            <img src="src/img/Lighthouse_Happy_Mother_Child.jpeg" alt="Lighthouse Ministries happy mother and child." width="100%" height="auto">
+                            <img src="src/img/Lighthouse_Happy_Mother_Child.jpeg"
+                                alt="Lighthouse Ministries mother and child." width="100%" height="auto">
                         </div>
                         <div class="col-md-6">
                             <div class="card">
@@ -209,12 +214,14 @@
                                         voluptatem? Possimus temporibus iusto aut, obcaecati enim, omnis deserunt,
                                         laboriosam minus quae nihil facilis ipsa molestiae expedita ab pariatur.
                                     </p>
-                                    <a href="https://www.facebook.com/wenatchee.lighthouse/" target="_blank" class="btn btn-primary">Facebook Page</a>
+                                    <a href="https://www.facebook.com/wenatchee.lighthouse/" target="_blank"
+                                        class="btn btn-primary">Facebook Page</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="src/img/Lighthouse_Social_Media.jpeg" alt="Lighthouse Bible Study and Church streamed on Facebook" width="100%" height="auto">
+                            <img src="src/img/Lighthouse_Social_Media.jpeg"
+                                alt="Lighthouse Bible Study and Church streamed on Facebook" width="100%" height="auto">
                         </div>
                     </div>
                 </div>
@@ -222,36 +229,65 @@
         </main>
         <footer class="bg-dark text-light">
             <div class="container pt-5">
-                <div class="row mx-auto g-5 d-flex justify-content-around">
-                    <div class="col-12 col-lg-3 me-3 d-flex flex-column align-items-start align-items-lg-center">
-                        <h3>Ministries</h3>
-                        <ul>
-                            <li><a href="wenatchee_lighthouse.html">Lighthouse</a></li>
-                            <li><a href="wenatchee_gospel_house">Gospel House</a></li>
-                            <li><a href="wenatchee_grace_house">Grace House</a></li>
-                            <li><a href="wenatchee_mission_house.html">Mission House</a></li>
-                            <li><a href="wenatchee_kings_garden_preschool.html">King's Garden PreSch</a></li>
-                        </ul>
+                <div class="row mx-auto g-5">
+                    <div class="col-12 col-md-4">
+                        <div class="mb-4">
+                            <h3>Ministries</h3>
+                            <ul class="sitemap-links">
+                                <li><a href="wenatchee_lighthouse.html">Lighthouse</a></li>
+                                <li><a href="wenatchee_gospel_house">Gospel House</a></li>
+                                <li><a href="wenatchee_grace_house">Grace House</a></li>
+                                <li><a href="wenatchee_mission_house.html">Mission House</a></li>
+                                <li><a href="wenatchee_kings_garden_preschool.html">King's Garden Pre-School</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Support</h3>
+                            <ul class="sitemap-links">
+                                <li><a href="serve.html">Volunteer</a></li>
+                                <li><a href="give.html">Donate</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h3>About</h3>
+                            <ul class="sitemap-links">
+                                <li><a href="wenatchee_lighthouse_vision.html">Vision</a></li>
+                                <li><a href="wenatchee_lighthouse_contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3 me-3 d-flex flex-column align-items-start align-items-lg-center">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="serve.html">Volunteer</a></li>
-                            <li><a href="give.html">Donate</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-3 d-flex flex-column align-items-start align-items-lg-center">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Vision</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                    <div class="col-12 col-md-8 d-flex justify-content-md-center align-items-center">
+                        <div class="footer-address">
+                            <div class="mb-3 d-flex align-items-center justify-content-center">
+                            <img src="src/img/Light-House CM.png"
+                                alt="Lighthouse Christian Ministries" width="50px" height="50px">
+                                <p class="mb-0 ms-2 h5">Lighthouse Christian Ministries</p>
+                            </div>
+                            <a class="light-link" href="https://goo.gl/maps/YViujAqW65pBh1xj8" target="_blank">
+                                <p>410 S Columbia St<br>
+                                    Wenatchee, WA 98801<br>
+                                </p>
+                            </a>
+                            <p>
+                                <strong>Phone:</strong> (509) 888-4864
+                            </p>
+                            <a href="https://www.facebook.com/wenatchee.lighthouse/">
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="30px"
+                                    viewBox="0 0 24 24" width="30px" fill="#FFFFFF">
+                                    <rect fill="none" height="24" width="24" />
+                                    <path
+                                        d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row py-5">
-                    <p class="text-start text-md-center">Copyright 2021 Lighthouse Christian Ministries<br>
-                    Website by <a class="light-link" href="zacrogers.works" target="_blank">Zac Rogers</a>
-                </p>
+
+                <div class="row py-5 px-4">
+                    <p class="text-start">© 2021 Lighthouse Christian Ministries / All Rights Reserved /
+                        <a class="light-link" href="privacy.html">Privacy Policy</a><br>
+                        Website by <a class="light-link" href="zacrogers.works" target="_blank">Zac Rogers</a>
+                    </p>
                 </div>
             </div>
             <div class="my-3 d-md-none"></div>

@@ -5,3 +5,23 @@ footer {
 .footer-section {
     min-width: 15rem;
 }
+
+.footer-address {
+    font-size: 1rem;
+}
+
+.sitemap-links {
+    padding-left: 0;
+    & > li {
+        list-style: none;
+        
+        & > a {
+            color: #6c757d;
+            text-decoration: none;
+            align-self:flex-start;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

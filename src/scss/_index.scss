@@ -1,0 +1,57 @@
+.inspo-container{
+    background: url('src/img/Lighthouse_Wenatchee.jpeg');
+    padding-top: 5rem;
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+.can-help {
+    background: none;
+    color: $dark;
+    border: 1px solid $dark;
+    transition: transform .2s;
+    border-radius: 0;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &:active {
+    transform: scale(.9);
+    background: $dark;
+        color: $light;
+    }
+}
+
+.need-help {
+    transition: transform .2s;
+    border-radius: 0;
+    
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &:active {
+    transform: scale(.9);
+    background: none;
+        border: 1px solid $dark;
+        color: $dark;
+    }
+}
+
+.cross {
+    top: 500px;
+    right: -92px;
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+.arrow {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    border-left: 1rem solid $light;
+    border-bottom: 1rem solid $light;
+    transform: rotate(-45deg);
+    transition: transform 100ms ease-in-out;
+}

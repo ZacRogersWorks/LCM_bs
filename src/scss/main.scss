@@ -3,12 +3,25 @@
 $primary: #1773dc;
 $secondary: #d11946;
 $dropdown-border-radius: 0;
+$enable-negative-margins: true;
+
+$btn-border-radius: 0;
+
+$card-border-radius: 0;
+$card-bg: none;
+$list-group-bg: none;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+$input-color: #f8f9fa;
+$input-bg: transparent;
+$input-border-width: 0;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'footer';
+@import 'index';
 @import 'give';
 @import 'serve';
 @import 'lighthouse';
@@ -22,12 +35,21 @@ $dropdown-border-radius: 0;
 @import 'animations';
 @import 'navbar';
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Helvetica Neue',' Helvetica', sans-serif;
+
+p, div, a, li, span, button, .btn {
+    font-family: 'Poppins', sans-serif;
 }
 
-img {
-    border-radius: 5px;
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.screaming {
+    text-transform: uppercase;
 }
 
 select {
@@ -41,53 +63,37 @@ header {
     position: relative;
 }
 
+label {
+    visibility: hidden;
+}
+
+input[type="submit"] {
+    border-style: none !important;
+}
+
+input, textarea, select {
+    border-radius: 0 !important;
+    border-bottom: 2px solid #f8f9fa !important;
+}
+
+.full-page {
+    min-height: calc(100vh - 120px);
+}
+
+.full-page-no-header {
+    min-height: 100vh;
+}
+
 .light-link {
     color: $light;
+
+    &:hover {
+        color: #c5c5c5;
+    }
 }
 
 .dark-link {
     color: $dark;
-}
-
-.active {
-    text-decoration:underline;
-}
-
-.inspo-container{
-    background: url('src/img/Lighthouse_Wenatchee.jpeg');
-    padding-top: 5rem;
-    background-position-y: 50%;
-    background-size: cover;
-}
-
-
-.help-btn {
-    transition: transform .2s;
-
-    &:hover {
-        transform: scale(1.02);
-    }
-
-    &:active {
-    transform: scale(.9);
-    }
-}
-
-.cross {
-    top: 500px;
-    right: -92px;
-    position: absolute;
-    mix-blend-mode: difference;
-}
-
-.arrow {
-    width: 3rem;
-    height: 3rem;
-    vertical-align: middle;
-    border-left: 1rem solid $light;
-    border-bottom: 1rem solid $light;
-    transform: rotate(-45deg);
-    transition: transform 100ms ease-in-out;
 }
 
 .card {
@@ -98,6 +104,10 @@ header {
     &-header {
         border-radius: inherit;
     }
+}
+
+.card-col {
+    background: transparent;
 }
 
 .fixedDonate {
@@ -130,6 +140,11 @@ header {
     right: 1rem;
     bottom: 1rem;
     color: $light;
+}
+
+.info-blurb {
+    list-style: none;
+    & > li > ul { list-style: none; }
 }
 
 

@@ -12,7 +12,7 @@
     background-color: $card-bg;
     background-clip: border-box;
     border: $card-border-width solid $card-border-color;
-    @include border-radius($card-border-radius);
+
   
     > hr {
       margin-right: 0;
@@ -48,6 +48,10 @@
     flex: 1 1 auto;
     padding: $card-spacer-y $card-spacer-x;
     color: $card-color;
+  }
+
+  .card-blur {
+    backdrop-filter: blur(2px);
   }
   
   .card-title {
@@ -132,13 +136,15 @@
     bottom: 0;
     left: 0;
     padding: $card-img-overlay-padding;
-    @include border-radius($card-inner-border-radius);
+    // @include border-radius($card-inner-border-radius);
   }
   
   .card-img,
   .card-img-top,
   .card-img-bottom {
     width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+    border-top-left-radius: none;
+    border-top-right-radius: none;
   }
   
   .card-img,
