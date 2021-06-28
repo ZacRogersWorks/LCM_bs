@@ -11936,6 +11936,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Roboto Slab", serif;
 }
 
+.hfont {
+  font-family: "Roboto Slab", serif;
+}
+
 .card-blur {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
