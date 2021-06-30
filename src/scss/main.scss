@@ -85,8 +85,39 @@ input, textarea, select {
     border-bottom: 2px solid #f8f9fa !important;
 }
 
+.logo {
+	font-size:2.5rem;
+	line-height: 1.5rem;
+	padding: .5rem 0;
+	margin: 0;
+
+	&_line-two {
+		font-size:1.38rem;
+		line-height: 1.5rem;
+		padding: 0;
+		margin: 0;
+	}
+
+    &_small {
+        font-size:1.5rem;
+	    line-height: .75rem;
+	    padding: .5rem 0;
+	    margin: 0;
+    }
+
+    &_small-line-two {
+        font-size: .84rem;
+        line-height: .5rem;
+    }
+}
+
+
 .full-page {
-    min-height: calc(100vh - 120px);
+    min-height: 100vh;
+
+    &_index {
+        min-height:calc(100vh - 120px);
+    }
 }
 
 .full-page-no-header {
@@ -156,8 +187,16 @@ input, textarea, select {
     & > li > ul { list-style: none; }
 }
 
+.blurb-margin {
+    padding-top: 20rem;
 
-@media screen and (max-width: 800px) {
+    &_less {
+        padding-top: 15rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
     .lighthouse-section-1,
     .kingsgarden-section-1,
     .gospelhouse-section-1
@@ -169,5 +208,27 @@ input, textarea, select {
     .gracehouse-section-1,
     .give-section-1 {
         background-position-x: 60%
+    }
+
+    .logo {
+        font-size:1.5rem;
+	    line-height: .75rem;
+	    padding: .5rem 0;
+	    margin: 0;
+
+	    &_line-two {
+		font-size: .84rem;
+        line-height: .5rem;
+		padding: 0;
+		margin: 0;
+	    }
+    }
+
+    .blurb-margin {
+        padding-top: 0;
+
+        &_less {
+            padding-top: 0;
+        }
     }
   }

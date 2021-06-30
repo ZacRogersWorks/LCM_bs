@@ -11715,54 +11715,46 @@ footer {
   background: url("src/img/mother1.jpeg");
   background-position-y: 33%;
   background-size: cover;
-  padding-top: 5rem;
 }
 
 .serve-section-1 {
   background: url("src/img/Lighthouse_Volunteer_Opportunities.jpeg");
-  padding-top: 5rem;
   background-position-y: 33%;
   background-size: cover;
 }
 
 .lighthouse-section-1 {
   background: url("src/img/Lighthouse_Christian_Ministries_Wenatchee.jpeg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
 
 .missionhouse-section-1 {
   background: url("src/img/Mission_House.jpeg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
 
 .gospelhouse-section-1 {
   background: url("src/img/Gospel_House_Housing.jpeg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
 
 .gracehouse-section-1 {
   background: url("src/img/Grace_House_Women_Children.jpeg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
 
 .kingsgarden-section-1 {
   background: url("src/img/kings_garden_preschool_boy.jpg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
 
 .free-food-section-1 {
   background: url("src/img/Lighthouse_Receive_Donations.jpeg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
@@ -11773,7 +11765,6 @@ footer {
 
 .vision-section-1 {
   background: url("src/img/Lighthouse_Wenatchee.jpeg");
-  padding-top: 5rem;
   background-position-y: 50%;
   background-size: cover;
 }
@@ -11841,6 +11832,39 @@ footer {
     bottom: -10px;
   }
 }
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
 nav {
   position: fixed;
   height: 120px;
@@ -11877,14 +11901,17 @@ nav {
   text-decoration: none !important;
 }
 
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
   .navbar-nav {
     box-shadow: none;
-  }
-
-  .myDropdown {
-    position: relative;
   }
 
   .dropdown-menu {
@@ -11978,7 +12005,33 @@ input, textarea, select {
   border-bottom: 2px solid #f8f9fa !important;
 }
 
+.logo {
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.logo_line-two {
+  font-size: 1.38rem;
+  line-height: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+.logo_small {
+  font-size: 1.5rem;
+  line-height: 0.75rem;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.logo_small-line-two {
+  font-size: 0.84rem;
+  line-height: 0.5rem;
+}
+
 .full-page {
+  min-height: 100vh;
+}
+.full-page_index {
   min-height: calc(100vh - 120px);
 }
 
@@ -12047,7 +12100,14 @@ input, textarea, select {
   list-style: none;
 }
 
-@media screen and (max-width: 800px) {
+.blurb-margin {
+  padding-top: 20rem;
+}
+.blurb-margin_less {
+  padding-top: 15rem;
+}
+
+@media screen and (max-width: 992px) {
   .lighthouse-section-1,
 .kingsgarden-section-1,
 .gospelhouse-section-1 {
@@ -12059,6 +12119,26 @@ input, textarea, select {
 .gracehouse-section-1,
 .give-section-1 {
     background-position-x: 60%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    line-height: 0.75rem;
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+  .logo_line-two {
+    font-size: 0.84rem;
+    line-height: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .blurb-margin {
+    padding-top: 0;
+  }
+  .blurb-margin_less {
+    padding-top: 0;
   }
 }
 

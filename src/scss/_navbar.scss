@@ -28,7 +28,6 @@ nav {
 	opacity: 10%;
 }
 
-
 .active {
     text-decoration:underline;
 
@@ -37,6 +36,14 @@ nav {
 	}
 }
 
+// Dropdown Animation //
+.animate {
+	animation-duration: 0.3s;
+	-webkit-animation-duration: 0.3s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+  }
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
@@ -44,10 +51,7 @@ nav {
 		box-shadow: none;
 	}
 
-    .myDropdown {
-        position: relative;
-		
-    }
+	
 
     .dropdown-menu {
         position: absolute;

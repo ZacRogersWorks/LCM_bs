@@ -22,8 +22,14 @@
         <header class="px-2 px-md-5 bg-light">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand fs-1 fw-bold" href="index.html"><img src="src/img/Light-House CM.png"
-                            alt="Lighthouse Christian Ministries" width="70"> LCM</a>
+                    <a class="navbar-brand fs-1 fw-bold screaming d-flex align-items-center justify-content-center"
+                        href="index.html"><img src="src/img/Light-House CM.png" alt="Lighthouse Christian Ministries"
+                            width="70" height="74">
+                        <div class="d-flex flex-column justify-content-center align-items-start ms-2">
+                            <p class="logo">Lighthouse</p>
+                            <p class="logo_line-two">Christian Ministries</p>
+                        </div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,33 +42,32 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                                     aria-exanded="true">
-                                    About </a>
-                                <ul class="dropdown-menu">
-                                    <li> <a class="dropdown-item" href="if_you_need_help.html" id="myDropdown">
-                                            Ministries
-                                            &raquo;
-                                        </a>
-                                        <ul class="submenu dropdown-menu">
-                                            <li><a class="dropdown-item" href="wenatchee_lighthouse.html">Lighthouse</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="wenatchee_gospel_house.html">Gospel
-                                                    House</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="wenatchee_free_food_market.html">Free
-                                                    Food
-                                                    Market</a></li>
-                                            <li><a class="dropdown-item" href="wenatchee_grace_house.html">Grace
-                                                    House</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="wenatchee_mission_house.html">Mission
-                                                    House</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="wenatchee_kings_garden_preschool.html">King's
-                                                    Garden Pre-School</a></li>
-                                        </ul>
+                                    Ministries</a>
+                                <ul class="dropdown-menu animate slideIn">
+                                    <li><a class="dropdown-item" href="wenatchee_lighthouse.html">Lighthouse</a>
                                     </li>
+                                    <li><a class="dropdown-item" href="wenatchee_gospel_house.html">Gospel
+                                            House</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="wenatchee_free_food_market.html">Free
+                                            Food
+                                            Market</a></li>
+                                    <li><a class="dropdown-item" href="wenatchee_grace_house.html">Grace
+                                            House</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="wenatchee_mission_house.html">Mission
+                                            House</a></li>
+                                    <li><a class="dropdown-item" href="wenatchee_kings_garden_preschool.html">King's
+                                            Garden Pre-School</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-exanded="true">
+                                    About Us</a>
+                                <ul class="dropdown-menu animate slideIn">
                                     <li class="my-nav__item__submenu"> <a class="dropdown-item"
-                                            href="wenatchee_lighthouse_vision.html"> Vision
+                                            href="wenatchee_lighthouse_vision.html"> About Us
                                         </a>
                                     <li class="my-nav__item__submenu"> <a class="dropdown-item"
                                             href="wenatchee_lighthouse_contact.html"> Contact
@@ -86,10 +91,10 @@
         </header>
         <main>
             <section class="hero bg-light">
-                <div class="container full-page d-flex flex-column justify-content-center">
+                <div class="container full-page_index d-flex flex-column justify-content-center">
                     <div class="container col-xxl-10 py-1 py-md-2 py-lg-5 hero autoFade">
                         <div class="row flex-lg-row-reverse align-items-center justify-content-end py-lg-2">
-                            <div class="col-lg-8 d-flex flex-column align-items-center align-items-md-start gy-5 rellax screaming"
+                            <div class="col-lg-8 mb-5 d-flex flex-column align-items-center align-items-md-start gy-5 rellax screaming"
                                 data-rellax-speed="3">
                                 <h1 class="display-1 fw-bold lh-1 mb-3 text-center text-md-start">Reaching People</h1>
                                 <p class="display-5">Changing Lives</p>
@@ -117,11 +122,12 @@
                                 in need throughout the Wenatchee Valley with grace and love.
                             </h2>
                             <p>We call our various ministries "Jesus Places" - providing food, shelter, counseling,
-                                community, teaching, and more to anyone who needs it, just as He did. If you're
+                                community, teaching, and more to anyone who needs it, just as Jesus did. If you're
                                 struggling
                                 financially, spiritually, or have a problem with addiction, our gracious directors and
                                 volunteers welcome you with
-                                open arms and will meet you wherever you are in life.<br>
+                                open arms and will meet you wherever you are in life. We believe Jesus is the solution
+                                to every problem.<br>
                             </p>
                         </div>
                     </div>
@@ -163,12 +169,35 @@
                                                 type="text" name="b_7936e9786df14a3a444fa3a1e_8a57d24304" tabindex="-1"
                                                 value=""></div>
                                         <div class="clear mt-3"><input type="submit" value="Subscribe" name="subscribe"
-                                                id="mc-embedded-subscribe" class="button btn btn-primary my-3"></div>
+                                                id="mc-embedded-subscribe" class="button btn btn-primary my-3"
+                                                data-bs-toggle="modal" data-bs-target="#emailSignup"></div>
                                     </div>
                                 </form>
-                            </div>
 
+                            </div>
                             <!--End mc_embed_signup-->
+
+                            <!-- Modal pop-up for email sign-up -->
+                            <div class="modal fade" id="emailSignup" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            You're signed up for our newsletter!
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal pop-up end -->
                         </div>
                     </div>
                 </div>
@@ -219,6 +248,15 @@
                                 alt="Lighthouse Bible Study and Church streamed on Facebook" width="100%" height="auto">
                         </div>
                     </div>
+                    <hr>
+                    <div class="row mt-5">
+                        <div class="col d-flex flex-column align-items-center">
+                            <h2 class="mb-3">We would love to show you around!</h2>
+                            <p>Contact us to take a tour of the ministries.</p>
+                            <a href="wenatchee_lighthouse_contact.html" class="btn btn-primary btn-large mb-3">Take a
+                                Tour</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -231,6 +269,7 @@
                             <ul class="sitemap-links">
                                 <li><a href="wenatchee_lighthouse.html">Lighthouse</a></li>
                                 <li><a href="wenatchee_gospel_house">Gospel House</a></li>
+                                <li><a href="wenatchee_free_food_market.html">Free Food Market</a></li>
                                 <li><a href="wenatchee_grace_house">Grace House</a></li>
                                 <li><a href="wenatchee_mission_house.html">Mission House</a></li>
                                 <li><a href="wenatchee_kings_garden_preschool.html">King's Garden Pre-School</a></li>
@@ -246,7 +285,7 @@
                         <div class="">
                             <h2 class="screaming">About</h2>
                             <ul class="sitemap-links">
-                                <li><a href="wenatchee_lighthouse_vision.html">Vision</a></li>
+                                <li><a href="wenatchee_lighthouse_vision.html">About Us</a></li>
                                 <li><a href="wenatchee_lighthouse_contact.html">Contact</a></li>
                             </ul>
                         </div>
@@ -256,7 +295,11 @@
                             <div class="mb-3 d-flex align-items-center justify-content-center">
                                 <img src="src/img/Light-House CM.png" alt="Lighthouse Christian Ministries" width="50px"
                                     height="50px">
-                                <p class="mb-0 ms-2 h5">Lighthouse Christian Ministries</p>
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-start ms-2 mt-2 fw-bold screaming">
+                                    <p class="logo_small">Lighthouse</p>
+                                    <p class="logo_small-line-two">Christian Ministries</p>
+                                </div>
                             </div>
                             <address>
                                 <a class="light-link" href="https://goo.gl/maps/YViujAqW65pBh1xj8" target="_blank">
