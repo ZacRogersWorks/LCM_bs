@@ -6083,15 +6083,15 @@ textarea.form-control-lg {
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: 75%;
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: 56.25%;
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: 42.8571428571%;
 }
 
 .fixed-top {
@@ -11955,6 +11955,31 @@ nav {
   }
 }
 /* ============ small devices .end// ============ */
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background: #d11946;
+}
+
+.banner-content {
+  color: #f8f9fa;
+  max-width: 1000px;
+}
+
+.banner-button {
+  margin: 0 16px;
+  white-space: nowrap;
+}
+
+.banner-close {
+  align-self: flex-start;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
 p, div, a, li, span, button, .btn {
   font-family: "Poppins", sans-serif;
 }
