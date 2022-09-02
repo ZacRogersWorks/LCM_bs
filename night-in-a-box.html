@@ -72,7 +72,7 @@
               id="main_nav"
             >
               <ul class="navbar-nav niab-nav d-flex">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
@@ -91,7 +91,7 @@
                     Ministries</a
                   >
                   <ul
-                    class="dropdown-menu animate slideIn bg-transparent text-light"
+                    class="dropdown-menu niab-dropdown animate slideIn text-light"
                   >
                     <li>
                       <a
@@ -162,7 +162,7 @@
                     About Us</a
                   >
                   <ul
-                    class="dropdown-menu animate slideIn bg-transparent text-light"
+                    class="dropdown-menu niab-dropdown animate slideIn  text-light"
                   >
                     <li class="my-nav__item__submenu">
                       <a
@@ -203,10 +203,10 @@
         <section class="niab-section d-flex">
           <div class="container d-flex align-items-center justify-content-around">
             <div class="d-flex flex-column align-items-center align-items-lg-start">
-              <p class="fst-italic d-none d-lg-block">Saturday Nov 19th</p>
+              <p class="autoFade fst-italic d-none d-lg-block">Saturday Nov 19th</p>
               <h1
                 aria-label="Night In A Box 2022"
-                class="niab-h1 position-relative d-flex align-items-start"
+                class="autoFade niab-h1 position-relative d-flex align-items-start"
               >
                 <span class="d-flex flex-column align-items-end me-2">
                   <span class="h1-night">Night</span>
@@ -214,19 +214,22 @@
                 </span>
                 <span class="h1-box mt-n2 mt-lg-n3">Box</span>
               </h1>
-              <div class="niab-graphic d-lg-none">
+              <div class="niab-graphic d-lg-none autoFade2">
                 <img
-                  class="img-fluid"
+                  class="img-fluid "
                   src="./src/img/NIAB-web-hero.png"
                   alt="Night In A Box 2022"
                 />
               </div>
               <div
-                class="niab-cta d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start"
+                class="niab-cta d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start autoFade2"
               >
                 <p class="fst-italic d-lg-none">Saturday Nov 19th</p>
-                <p class="fs-5">Actively solving homelessness... everyday.</p>
-                <a class="register-btn box-shadow"
+                <p class="fs-5">Actively solving homelessness... everyday. By being a part of Night In A Box, you are actively helping to solve homelessness in our valley.</p>
+                <a class="register-btn box-shadow autoFade2"
+                role="button"
+                href="https://www.eventbrite.com/e/night-in-a-box-2022-tickets-405461555427"
+                target="_blank"
                   >Register Now!
                   <svg
                     class="ms-2"
@@ -240,15 +243,16 @@
                       data-name="Icon awesome-arrow-right"
                       d="M7.37,3.779l.859-.859a.925.925,0,0,1,1.312,0l7.521,7.517a.925.925,0,0,1,0,1.312L9.54,19.269a.925.925,0,0,1-1.312,0l-.859-.859a.93.93,0,0,1,.015-1.327l4.662-4.441H.929A.926.926,0,0,1,0,11.714V10.476a.926.926,0,0,1,.929-.929H12.047L7.385,5.106A.923.923,0,0,1,7.37,3.779Z"
                       transform="translate(0 -2.647)"
+                      fill="currentColor"
                     />
                   </svg>
                 </a>
               </div>
-              <p class="mt-3 fw-light">
-                Want to be a sponsor? <a class="sponsor-link">Click here.</a>
+              <p class="mt-3 fw-light autoFade2">
+                Want to be a sponsor? <a href="https://www.wenatcheelighthouse.org/night-in-a-box-sponsorships" class="sponsor-link">Click here.</a>
               </p>
             </div>
-            <div class="niab-graphic d-none d-lg-block">
+            <div class="niab-graphic d-none d-lg-block animate slideIn">
               <img
                     class="img-fluid "
                     src="./src/img/NIAB-web-hero.png"
@@ -260,163 +264,131 @@
         </section>
 
         <section class="niab-section container">
-          <div
-            class="niab-info-card mb-5 box-shadow d-flex flex-column align-items-start"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="97"
-              height="83"
-              viewBox="0 0 97 83"
-            >
-              <image
-                id="stars"
-                width="97"
-                height="83"
-                xlink:href="data:image/png;base64,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"
-              />
-            </svg>
-
-            <h2 class="niab-h2">How It Works</h2>
-            <p>
-              On Saturday, Nov 18th, dozens of individuals and families will
-              gather at SUCH AND SUCH CHURCH PARKING LOT, with sleeping bags,
-              snacks, flashlights, and… you guessed it, cardboard boxes, to
-              spend a night sleeping on the street to raise money for Lighthouse
-              Christian Ministries to continue fighting homelessness right here
-              in Wenatchee.
-              <br />
-              <br />
-              Participants can register HERE, and pledge to raise a certain
-              amount of money from their friends, family, and peers, which goes
-              straight towards the effort to house, feed, and disciple local
-              homeless individuals.
-            </p>
-          </div>
-          <div class="d-flex flex-column flex-lg-row">
+          <div class="row g-0">
             <div
               class="niab-info-card mb-5 box-shadow d-flex flex-column align-items-start"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="100"
-                height="98"
-                viewBox="0 0 100 98"
-              >
-                <defs>
-                  <pattern
-                    id="pattern"
-                    preserveAspectRatio="none"
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 189 185"
-                  >
-                    <image
-                      width="189"
-                      height="185"
-                      xlink:href="data:image/png;base64,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"
-                    />
-                  </pattern>
-                </defs>
-                <rect id="moon" width="100" height="98" fill="url(#pattern)" />
-              </svg>
-
-              <h2 class="niab-h2">Homelessness <br />In Wenatchee</h2>
-              <p>
-                In November of 2011, Shawn Arington, now Lighthouse Director,
-                slept in a box on Wenatchee Ave to raise money and awareness for
-                the early Lighthouse Soup Kitchen. The next year, he was joined
-                by several others, and the tradition has continued ever since.
-                Here at Lighthouse Christian Ministries, we put an emphasis on
-                Christ’s commission to go to the lost and the least and show
-                them not only love and the Word of God, but also provide them
-                with the support and resources needed to get back on their feet
-                and live a full life.
-              </p>
-            </div>
-            <div
-              class="niab-info-card mb-5 ms-lg-5 box-shadow d-flex flex-column align-items-start"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="176.201"
-                height="67.84"
-                viewBox="0 0 176.201 67.84"
+                width="97"
+                height="83"
+                viewBox="0 0 97 83"
               >
                 <image
-                  id="cloud"
-                  width="176.201"
-                  height="67.84"
-                  xlink:href="data:image/png;base64,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"
+                  id="stars"
+                  width="97"
+                  height="83"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABTCAYAAACPtGkFAAAACXBIWXMAAAsSAAALEgHS3X78AAAH6klEQVR4nO2dX2wcRx3HP3O+Ot74NgkVoCBR4or+eSmJIySKICKHRF9QI8wf8dBS9SIFFUEanH1AeUocWtQiqq1TNZFVFeoEikqpFEdFeQDUnGkKAhXFhiAqBMIpQogkUh3v2XM2lxseZs7es+/O5/judu68H8ny3szs6bf73fn/298JpRQxjUcGfl+ia8cnN23+8iurlU22wqCNiEjcfkSp6av1lE0025h6kIE/KHMvvhy1HY1EFWe+pIo33qinrC01YQDyH47aiEYhA78f+AAwVU95W0TYi1qI2oZ1IwM/jeh9EngbwHG9qXrOs6I5alfm5352VAZ+uixRyd3Q9VVI/r7e74lchPBFmGpcOt4mAz8tA39bJIbVQbH43nVInJe559+Wgd9nUjfDzQ9B4Z16v8eW5qjEARn49wF7SwkisfUJ4Gh0JlXHSX3jlAz836L+dxH4JzASyp4APVQF+kyaPhapbYnE1u0I98wm5/PnRdTzBBn4g8CzVbKvAAOO60200KQ1o2+0eB3UfaHkPwIfX1k6eQ2x+VeomR+UriuymmCekFFCT/0yTgODjutNt8qmW8FcxwAkboObQBcggEJYgHEgC4w57qEVD1QkNUEG/hBwrELWLPAaMFTvyCJK5ufO7SwW/30GEkko5FELKeDeUJFZ4EHH9bK1vqflIsjcqQuofDqUNA9sMsf7HNf7RUsNaiAy8EeBR83HvwH3mOMTjusNVjsvgtFR94vAcWA/sBt4OpSZa709DSUdOn4MfZ0A35aBP7E0giqn5X2CkzpQtjwhA3+g1TY0AzOU3gEEgAukHdcbkoE/BuLHoHaB+LMM/Ecc1xsLnxv5PKGDSJv/byC6/1FKdFxvwnEPfwxdKwRw1vSJi8QiNI7SRHMMVfwDovdz4UzH9Yb0EDbxFnBM5p7/ZWkiapsIVs8HVmFJBAqvglox03dcb8pxB/cAX0QVdyI2XZKBv80GERZvvO1zgpqInj7oOm+uIQvJp6oVdVxvzHEPbRciddJxvWkbli1KN34yUivWi8rvAoZh8WFadX+kp/fRZ8COtaOJZf/blOQ1xz00eitnRt4cOa43jejJoqf1bYvjHvrgrZ4b+QJejAU1ISYWwQpiESwgFsECYhEsIBbBAmIRLCABkJ/9yesyN/KjsMvJcmTgp+fnzh5unWkbhwSAKl59HAqfAS7JYPjiCocmALHl68XitR2ljzLwB2Tu1Lsts7SDSYBZYk0dvAs4AcVPAxdk4GfLxcjfj8pNa6es534KnIXE05W+NGZtrFi2MDf+DHCHSRoHhoALQBa67tUeZux3XG+0VYZ2MosimE3oTCivH3gA2FzhvFiABrIowvzcuZ1KvXdUqbm7UAt3a5/KSiTziMRfUAsX0cvPY229GWMBVVdRzf7nHvRGxUfLc5MS0fUvEFKIrY/39D78ZrMN7WRqzRP6QDyFFmDepJ0GxqHgoObvQeXHYgHWT0URzHxh3Di4TgK/MVlTjuulgc+GvAb+Xmt+EbM6K0TQzljiTWALcA7tT9NtsicAHNfLGq+BO0FMQNfv8rM//G6LbO44ykSQgZ8BzoJKAccd1xtY1umWdcB6fvGtr+gha3Km+eZ2JuEhagZ4CUQO1L6wJ7EM/Cyw13E9EYWRnU4CwgIk3gJ1R0VX7pBrX0xjScrcyDeBk4ju7zupg0cqFRKJ299RavZ6i23bMCSF2FJQam63kzpYw+8n2YOab9v3Bmwn2dP70At1ls0205CNTF0eeEK4fo/7takm27JhiZ2/LCDe3rSAWAQLiEWwgFgEC4hFsABrRcjPjj4YtQ2twloRlFp4ZqPsU1grAiSeEOK2X9sc76hRWCuCkzrwslKqgOh+NWpbmo21ImgKR1ALD5iYSB2L1SJo36au/4B4slpwjnpYz7mtwGoRNDdfANULjK1adBky8DMyeO4qYsv3mmBYw2gDERgGZoBdywNzVEPffP9d4CVQ153UgYebaeB6aekqqsyNXDYRsi6jA7dOoN1oar5IvixS2O5q5Y0f7TCwyyRNokPeWO0h2FoRAr8Pkq9A4f4K2eNoUbLARDj8mhmmTgFbgUnH9crmD6bNH2Ip6ha0iQAQXQy8NPqmVQtCCDoSZBbdF2TRzsqlqJHHdeiaxWiSQ2iBSrSNABDxpo4RI0P5E1yNSeAjwPuAG8BDwHdYKWRbCQCW7KyZ5mQQLcjWmoVr03YCgCUihDE+UBlqN1WV+CvwqXYTACwUoUTopZUMOsBfPYwDo+32Aou1IpQwI6MzwL41nHYDPVQdboeaYbUIZil7lKVx/1ppCzGsFcEIkKVyR30F+BNLteO/QJ7qzdYM8GxpWGsbVopgOudhKgswDpQC2k6FyuxHi9Zv/tLANspqUfIaFD5hWxxu60QwNeBSleyymNPLljNuAH2Vmh3Tr/SDfsGlkfY2AqtEMCOiCVbWgCtAptINlIE/xVIzdNzWJqcWtq2ijrFSgBNAf40nOBM6Pmb73kElrBHBrAGFR0GngTsd16v5QxZGnHOhpKGmGNhErGmOZG7kMmr+Ctz8OWt8QX3ZKito8aYab2VzsEaE9bLst3lOO66XidCcNdExIgDo3yrgC+Zj29QGa/qEBpFBD1VLx21BR4lg+pHSRM6L0pa10FEiwOJo6TDgmpm39XRUnxBG5k6+BsntTuqxPVHbshodVxNK6HAP4v1R21EP/wexlQYAFic+QwAAAABJRU5ErkJggg=="
                 />
               </svg>
-
-              <h2 class="niab-h2">History</h2>
+  
+              <h2 class="niab-h2">How It Works</h2>
               <p>
-                In November of 2011, Shawn Arington, now Lighthouse Director,
-                slept in a box on Wenatchee Ave to raise money and awareness for
-                the early Lighthouse Soup Kitchen. The next year, he was joined
-                by several others, and the tradition has continued ever since.
-                Here at Lighthouse Christian Ministries, we put an emphasis on
-                Christ’s commission to go to the lost and the least and show
-                them not only love and the Word of God, but also provide them
-                with the support and resources needed to get back on their feet
-                and live a full life.
+                On Friday, Nov 18th, local businesses, individuals, and families will
+                gather at SUCH AND SUCH CHURCH PARKING LOT, with sleeping bags,
+                snacks, flashlights, and… you guessed it, cardboard boxes, to
+                spend a night sleeping on the street to raise money for Lighthouse
+                Christian Ministries to house, feed, and disciple local individuals right here
+                in Wenatchee.
+                <br />
+                <br />
+                Participants can register HERE, and pledge to raise a certain
+                amount of money from their friends, family, and peers, which goes
+                straight towards the effort to house, feed, and disciple local
+                homeless individuals.
               </p>
             </div>
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide d-lg-none"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./src/img/niab-carousel/night-in-a-box_1.jpg"
-                    class="d-block w-100"
-                    alt="..."
+          </div>
+          <div class="row g-0 d-flex">
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0 pe-lg-4 animate slideIn">
+              <div
+                class="niab-info-card box-shadow d-flex flex-column align-items-start"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="176.201"
+                  height="67.84"
+                  viewBox="0 0 176.201 67.84"
+                >
+                  <image
+                    id="cloud"
+                    width="176.201"
+                    height="67.84"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYMAAACVCAYAAAC6nJYgAAAACXBIWXMAAAsSAAALEgHS3X78AAAOx0lEQVR4nO3df4zk9V3H8ef9gFvCIUNCeifmcE7OckmvME01ntHU0Vi5tkDOpjQFIp6oiR5Ji0ZTIAaJadpLrAarcJeolyttxWjaXqpQLjZh/8CEWpUrtgkXabtyBo+Ypou9pnt7M3v+8f5OZ3aZ/TG739/f5yOZ7M7O7uyH4fbzms+P7+e96dKlS0gqVAvoAG1gL7AzuT+V3FrA1cv87AXgXPL5bPL5DPAScDr52ulsmq062WQYSLnqJLd3Am8nAmAbMEd0/GnqJbcp4DXgZeBfgZMMg0ICDAMpa23gTuAgcDOwBdhaZIMYBs+rwDTw98lHw6HBDAMpfR3gg0QAXEXxnf9qekQbzwCfBJ4kpprUIIaBlI428DARAFcClxfamo25SKw9HE1ujhgawDCQNuYQ8ABwA+UfAazXKeAIMZWkmjIMpMm1gLuAjxKjgLqGwKge8Dox+nm84LYoA4aBNJkjwP2UYyG4CH3gPHCMeC2cQqoJw0Bam8M0aySwmh7wPeAhHCnUgmEgrawD/C31XhPYiAVi+ui9uKZQaZuLboBUUi3gOPAV4EYMguVsBq4BvgQ8R7xuqiDDQHqjDvBN4FcwBNZqC/AzxJbUBwtui9bBaSJpsQeJtQGtXw/4MnArLjBXhmEghRbweeAdOGJOywXgAK4lVIL/6KUIgheBLv5NpGkb8CxOG1WCIwM1XQd4nui4lI0F4Cng9qIbouX5LkhN1iHmtg2CbG0G3k2MEtxtVFKODNRUgyCo8oFyVXQWuAkXlkvHkYGayCAozi5ifcYRQsk4MlCVtJPbQDf5uLRq1/QKzzFYLN6VXrO0Do4QSsYwUFl1iM7+QPL5DmL/+hywfZmfGX38AlGg5d9YXMnra8BbMmu11qoPPI2LyqVhGKhMOsDvA+8hOvQtKT3voJLX94ArcHq0LPrAE8C9RTdEhoHK4TDwR8QUTloBoGroEyVCPfm0YIaBinQY+FOaWxtAYZ44DHCm4HY0mmGgInSBzwE/hCMBhRlgd9GNaDLnTpW348A/EcceGwQa2EVUTlNBHBkoLy3gBeKP3hDQOBeBN+N0USEcGSgPg739bQwCLe8y4NNFN6KpDANlzYu8NIn9DC8mVI6cJlKWDAKtxxlgb9GNaBq38ylLjwHXFd0IVc6PA39JbDLYk3ztdHKbTj4qZY4MlJUuUSTdNQKlqQ+8Suw8muRCtRZxhXuHWLtqMTzW5DxxjMlLDEOncWcmGQbKyis4PaTsLADniKNLlhspdIirm28hRqjzrH5S7RwwBXwH+CJxrtXJFNpbeoaBsnCQ+CNyGlJ5uI/hKKEF3AV8hHQuauwRZ1qdAB6hxiMGw0BZ+HfgbUU3Qo0xON/oauAPye54k3ngKDUNBcNAaWsRQ2wpbwvks13+AvDrwGdy+F258ToDpa1LDK2lvOXVn20DPgl8gRpVbDMMlLYDuFag+tsC3EaNSngaBkrbvqIbIOVoF7GrqVN0QzbKMFDalitJKdXVNuDLVDwQDANJ2rjLqfgagmEgSenYRRyXUUmGgdLmuTFqsn1UtEiPYaC0TRfdAKlAW4APE+cfVYphoLRN43UGUuXOMzIMlLYZ4NtFN0Iq2FupWJEeLw5S2o4A1xbdCKlgm4EngHvGPDZLCdfWPJtIaekATwE7sIaBNPBd4ArijfccwyOyp5LH/wv4b+A54BkKXHMzDJSGI8SimaT1G9RbOEOcffQkMe2aC8NAG9Ei3snsw9GAlIUzxJutE1n/IsNA69UhguDqgtsh1V2f2KF3jAxrKbibSOtxkDiLxSCQsreFOP/oQ8BrwKNkcOyFIwNN6jDwWNGNkBpsUIrzPlIssGMYaBKHgU/g+oBUBj3g68RIfWajT2YYaK26wLNFN0LSG6RShtMw0Fp0iDWCy4tuiKSx+sRFbveu9wkMA62mRQxFryu6IZJW1AeeB25lHTuODAOt5lkqdsaK1HBngZuYMBDcWqqV3A28o+hGSJrILuBFJtx+6shAy2kROxS8lkCqpolGCI4MtJxHMAikKtsFvLDWb3ZkoHFaxJWO7h6Sqq0PPA3cvto3OjLQOI9gEEh1sAV4F/Dgat/oyEDjzBFnoUiqj7exQlEdRwZa6iCwqehGSErdUys9aBhoqXtxikiqozcRJ56O5TRRM7WTWwfYm3x+PbATuKaoRknKxW7GHGxnGNRfm7iC+J3A24EbidMOewzrsEpqjq8SbwQXMQzqp010/h9IPm4hinFLEsR2018kKhX+gGFQD23gTuC3iQtNJGklZ4gp4h8wDKqrBdwFPEDM9V9WbHMkVUgP+ElGtpoaBtXTBj4O3EbsBnMKSNJ6nAIODO4YBtXRBo4BtxTcDkn1cQ3JQXZeZ1B+beAZ4D8xCCSl5yIx1QwYBmXWIi4Q+RYRAk4HSUrTZcBvDO44TVROXeAkcCWGgKRsXQPMOjIon+PAl4haAgaBpCz1SMraGgbl0QZeAX6VuFBMkrK2FbgDDIOyeDfwMnHBmP9PJOWpC64ZFKkL3AO8n1gbkKSibHJOOj8tolaAZwZJKpN5oGtnlK0OcAh4LzEF1MMAkFQulwMtO6Z0tVl8YugmFheK8fWWVEb77Zw2pkV0+ncQRactDCOpinYaBpMZ7fy7wHU49SOp+vbYia2szbBKWJfxnb+voaSq225HtliHmO75OWA/cRWwnb+k2mtyx9YmOv87GNYGnmfxgi80+zWS1BBN6ejaRMffJWp/7mH8Pv+lQSBJjVDHMOgkt/1E599meNZPHf97JWmjzle5c+wwXOD9CeLd/g7GT/VIkpb3ctnDoMWw098P7GPY6c8BU2N+xiCQpMmcK0MYtBnO6e8lOvydwA3J4+eB7WN+blwQSJIm93zWYTB4Zw8xnbOTYWd/LcOtmz2W79zHBYEkKR3fB2bXc4R1d+Tz9shtD9H5bwd+dOR7lntnL0kqh01biVM19xPvzLcTnTrJ51uJd/HbRn5ojngnv9YO3iCQpPJ6DaKzv554Z78zub+dCIYdS35gduRxSVI9nIa1VzobnfsfvT9FhAgjj7eSj6NTRRDTRb2RxyVJxfs14ESeZS+7S+53iGDYSYTKHmLUsdz0VI8IlCncSSRJadkNzFSpBvIgPAbaya3FMFQGwTKVfO3qJc/hVJckDZ0llgoqdTzD6Q3+/GpTXaOL5051SWqCo4NPqjQyKIPuMvfbycfVprokqUx2AzNgGOTFF1lS2fwz8LODO5sLbEiTvFB0AyRpRA/4g9EvGAb5+CvixZekMvgGMD36BaeJ8tEirvLzRFVJResRdd2nR7/oyCAfs8A/FN0ISWLMqAAcGeSpDXyr6EZIarSxowJwZJCnGeDPcO1AUnH+jjFBAI4M8tYiQmHpldGSlLXXiRmK2XEPOjLI1yxwEOgX3RBJjdIn+p6xQQCGQRGmgScwECTlow/8BctMDw04TVSc08DNRTdCUu19lcXnso1lGBSnBbwI7Cq6IZJq6yxwEytMDw0YBsUyECRlZQ74YdYQBOCaQdFmidQ+W3RDJNXKPPDTrDEIwDAoAwNBUpq+DfwUE9aAMQzKYRAI08BCsU2RVGFniboqExcDMwzKYxb4eeCP8SplSZNZIM4/W9Ni8TguIJdTFziJVypLWpuHgI9t5AkMg/JqAY8B76dataol5aNPHI3/HjZeI95pohKbBe4mThg8i2sJK1kgptacXlNTzAMfB36EFIIADIMqmAauJ0rUXcAOb6l54M+By5LbxWKbI2XuFHAj8ECaT2oYVMfHgJ3E1NE8hkKP4R/F/SNff7yY5qiG+sBngTOU4+/tFLAbOECcfpwq1wyqqUW8K/gt4CqaF+qniP/2mTGPtYBzwLY8G6RaOkuMyiGOfv4E8EvEGt6WHH5/D/gucbDlo2QQAKMMg+o7RATDDdR3obnHcOvc77H6H8XdwAnq+3ooe/PEqHNmzGMHgXuJYNhEurXNBwHwRWKbeSrrAWthGNRHG3iY+Id6Jen+Ay1KD/gf4AjwN0y2f/oLwG1ZNEq11wfeR2zvXk2H2Ap+AHgrcF3y9VlilDpOjzg3aHty/xtEp/+PxBrhzORN3jjDoJ46wAeJYLiKar1Dvgj8L/DXwHHW/4fhIYBajz7xt7ORtacWbzwyukt0+KNvaKY38DtSZxjUXxu4kwiGm4m5zjKFwzxwiThz/STwJOm9M8ojEC4BXwPeQvPWbupmAfg8MSpoHMOgeTrJ7VZgHzEvOtgpkWVIDK4DmAJeBf4DeIZ4d5TlvGgr+R37SH/Rbx74HeJd5HHgngx+h/KxADwF3F50Q4piGAhi9NAmQmIv0XFeS3SkO8Z8/+hQdyq5jXo9+Z5ZoqOfITrkwf0iHAE+nNJzLQCvAL/M4v+ew8TWX1VLH3iaBgcBGAaa3NL50CI7+Em1gWPALev8+QVip8dDLD+n3CVGPG5trYY01ghqwTBQE7UZ7rxabYF9ntiZ9S/AUWLL6lqe/1lircJpo/IaneZrPMNATdcmRjr7iSu8B+aAl4hRz/Q6n/tR4D7KtWCv8B3gF6jOqDZzhoGUrS7wOaq3xbeuesBzxHrPus79ryu3wknZmgZ+DPhUwe1QHPT4MFFEyiBYwpGBlJ8O8GliO6+jhPz0gK8Ta0QzxTalvBwZSPk5TWzb/RCx/bYMJ2HWWY94nQ8RQTxTZGPKzjCQ8vc4sUX3T7BGRVbmiWs+2sBnim1KNThNJBVrcBz5/ZTvqJCq+ixrO91WIwwDqRxawF3AR4lTZw2FyRkCG2AYSOVzEPgIcfidltcnptiOAY/gDqENMQyk8moT00eHcLQw6iLwTeK8qRPFNqU+DAOpGrrA7xLVtZq4ttAH/o+cSkA2kWEgVU8X+E3gXdT7yuZBoaNTRP1hj47IkGEgVVubxcWL8irWnoXRQkdHKbAEZBMZBlK9DIoXfYBhTd7vA1cU2agxBqfBvg48Tz6FjrQCw0Cqvy4xgtjP8HTWQdGi8wwLs6dtjhipbCU6/XNEidDn2NhpsMqAYSA112ihom5yvwXsIQJiXBW7cQZbOl8mwmWGYfH3KhU/arT/B2P0aD0z2uqpAAAAAElFTkSuQmCC"
                   />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./src/img/niab-carousel/night-in-a-box_2.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./src/img/niab-carousel/night-in-a-box_4.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./src/img/niab-carousel/night-in-a-box_5.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./src/img/niab-carousel/night-in-a-box_6.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
+                </svg>
+  
+                <h2 class="niab-h2">History</h2>
+                <p>
+                  In November of 2011, Shawn Arington, now Lighthouse Director,
+                  slept in a box on Wenatchee Ave to raise money and awareness to open the 84 person emergency shelter in Wenatchee. That is, until he was removed by police. 
+                  <br/><br/>
+                  The next year, he was joined
+                  by many others (law enforcement included), and the tradition has continued ever since.
+  
+                  <br/>Today, there are now over 100 annual participants in Night In A Box.
+                  <br/> <br/>
+                  Here at Lighthouse Christian Ministries, we put an emphasis on
+                  Christ’s commission to go to the lost and the least and show
+                  them not only love and the Word of God, but also provide them
+                  with the support and resources needed to get back on their feet
+                  and live a life more abundantly.
+                </p>
               </div>
             </div>
-          </div>
+            <div class="col-12 col-lg-6 ps-lg-4">
+              <div
+                class="box-shadow carousel-fluid slide animate slideIn"
+                data-bs-ride="carousel"
+                id="niabCarousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./src/img/niab-carousel/night-in-a-box_1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./src/img/niab-carousel/night-in-a-box_2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./src/img/niab-carousel/night-in-a-box_4.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./src/img/niab-carousel/night-in-a-box_5.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./src/img/niab-carousel/night-in-a-box_6.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+            </div>
+            </div>
         </section>
         <section class="niab-section">
           <div
             class="container d-flex flex-column align-items-center justify-content-center align-items-lg-start"
           >
-            <div class="event-details-heading d-flex justify-content-center align-self-center mt-5">
+            <div class="event-details-heading d-flex justify-content-center align-self-center mt-5 animate slideIn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -452,24 +424,27 @@
             </div>
             <div class="container">
               <div class="row">
-                <div class="col-12 col-lg-7 event-card box-shadow row d-flex justify-content-between align-items-center">
+                <div class="col-12 col-lg-6 event-card box-shadow row d-flex justify-content-between align-items-center animate slideIn">
                   <div
                     class="col-2 d-flex div-border flex-column align-items-center align-self-center"
                   >
                     <p class="fw-bold m-0">NOV</p>
-                    <p class="fw-light m-0">19</p>
+                    <p class="fw-light m-0">18</p>
                   </div>
                   <!-- <div class="c div-border"></div> -->
                   <div class="col-8">
                     <p class="m-0">
-                      <span class="fw-bold me-2">Saturday</span>6pm - 10am
+                      <span class="fw-bold me-2">Friday</span>6pm - 10am
                     </p>
                     <p class="fw-light m-0">ADDRESS</p>
                   </div>
-                  <div
+                  <a
                     class="col-2 ticket-btn box-shadow d-flex flex-column align-items-center justify-content-center"
+                    role="button"
+                    href="https://www.eventbrite.com/e/night-in-a-box-2022-tickets-405461555427"
+                target="_blank"
                   >
-                    Buy
+                    Sign
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="40.5"
@@ -481,17 +456,18 @@
                         data-name="Icon awesome-ticket-alt"
                         d="M9,11.25H31.5v13.5H9ZM37.125,18A3.375,3.375,0,0,0,40.5,21.375v6.75A3.375,3.375,0,0,1,37.125,31.5H3.375A3.375,3.375,0,0,1,0,28.125v-6.75a3.375,3.375,0,0,0,0-6.75V7.875A3.375,3.375,0,0,1,3.375,4.5h33.75A3.375,3.375,0,0,1,40.5,7.875v6.75A3.375,3.375,0,0,0,37.125,18ZM33.75,10.688A1.687,1.687,0,0,0,32.063,9H8.438A1.687,1.687,0,0,0,6.75,10.688V25.313A1.687,1.687,0,0,0,8.438,27H32.063a1.687,1.687,0,0,0,1.688-1.687Z"
                         transform="translate(0 -4.5)"
+                        fill="currentColor"
                       />
                     </svg>
-                    Tix
-                  </div>
+                    Up!
+                  </a>
                 </div>
               </div>
             </div>
             <div class="container">
-              <div class="row d-flex align-items-center">
+              <div class="row">
                 <div
-                  class="event-details col-12 col-lg-7 box-shadow niab-info-card d-flex flex-column"
+                  class="event-details col-12 box-shadow niab-info-card d-flex flex-column align-items-end"
                 >
                 <div class="container g-0">
                   <div class="row">
@@ -501,42 +477,46 @@
         
                       <h3>What’s the schedule?</h3>
                       <ul class="mb-4">
-                        <li>Saturday</li>
-                        <li><span>6:00pm - </span>Stake out your spot</li>
+                        <li>Friday</li>
+                        <li><span>6:00pm - </span>Grab a box & stake out your spot</li>
                         <li><span>7:00pm - </span>Announcements</li>
-                        <li><span>7:30pm - </span>Games, activities, & dinner</li>
+                        <li><span>7:30pm - </span>Testimony & dinner</li>
                         <li><span>8:00pm - </span>Campfire & worship</li>
                         <li><span>9:00pm - </span>Wind down</li>
                         <li><span>10:00pm - </span>Quiet time</li>
         
-                        <li>Sunday</li>
-                        <li><span>9:00am - </span>Breakfast</li>
-                        <li><span>10:00am - </span>Sunday worship & service</li>
-                        <li><span>11:00am - </span>Clean up and go home!</li>
+                        <li>Saturday</li>
+                        <li><span>6:00am - </span>Breakfast &</li>
+                        <li><span>7:00am </span>Clean Up</li>
+                        <li><span>8:00am - </span>Go Home</li>
                       </ul>
       
                     </div>
                     <div class="col-12 col-lg-6">
                       <h3>What should I bring?</h3>
                       <ul class="mb-4">
-                        <li>A box!</li>
                         <li>Sleeping bag</li>
                         <li>Flashlight</li>
                         <li>Warm clothes</li>
                         <li>Etc...</li>
                       </ul>
-                      <h3>How much does it cost?</h3>
+                      <h3>How much is registration?</h3>
                       <p class="mb-4">
-                        General: $40 
-                        <br/>General w/ t-shirt: $60 
-                        <br/> Kids: $25 
-                        <br/> <br/>Sign-up ends
-                        November 15th
+                        General: $50
+                        
+                        <br/> Youth: $40
+                        <br/>Glow In The Dark T-Shirt: $23
+                        <br/> <br/>Registration ends
+                        November 17th
+                        <br/> T-shirt orders ends November 3rd.
                       </p>
                     </div>
                   </div>
                 </div>
-                  <a class="register-btn box-shadow d-flex justify-content-center"
+                  <a class="col-12 col-lg-3 register-btn box-shadow d-flex justify-content-center"
+                  role="button"
+                  href="https://www.eventbrite.com/e/night-in-a-box-2022-tickets-405461555427"
+                target="_blank"
                     >Register Now!
                     <svg
                       class="ms-2"
@@ -550,51 +530,10 @@
                         data-name="Icon awesome-arrow-right"
                         d="M7.37,3.779l.859-.859a.925.925,0,0,1,1.312,0l7.521,7.517a.925.925,0,0,1,0,1.312L9.54,19.269a.925.925,0,0,1-1.312,0l-.859-.859a.93.93,0,0,1,.015-1.327l4.662-4.441H.929A.926.926,0,0,1,0,11.714V10.476a.926.926,0,0,1,.929-.929H12.047L7.385,5.106A.923.923,0,0,1,7.37,3.779Z"
                         transform="translate(0 -2.647)"
+                        fill="currentColor"
                       />
                     </svg>
                   </a>
-                </div>
-                <div
-                  class="col-12 col-lg-5 d-none d-lg-block"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./src/img/niab-carousel/night-in-a-box_1.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./src/img/niab-carousel/night-in-a-box_2.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./src/img/niab-carousel/night-in-a-box_4.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./src/img/niab-carousel/night-in-a-box_5.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./src/img/niab-carousel/night-in-a-box_6.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
