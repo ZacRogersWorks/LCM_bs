@@ -10959,6 +10959,11 @@ nav {
   transform: scale(1.05);
 }
 
+.sponsor-logos {
+  max-width: 400px;
+  height: auto;
+}
+
 @media only screen and (min-width: 992px) {
   .niab-h1 {
     width: 320px;
