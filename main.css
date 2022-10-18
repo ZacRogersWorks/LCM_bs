@@ -10959,9 +10959,14 @@ nav {
   transform: scale(1.05);
 }
 
+.sponsor-section {
+  padding-top: 128px;
+  background: linear-gradient(180deg, rgb(28, 54, 83) 0%, rgb(255, 255, 255) 99%);
+  color: black;
+}
+
 .sponsor-logos {
-  max-width: 400px;
-  height: auto;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 992px) {
