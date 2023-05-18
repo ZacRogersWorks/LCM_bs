@@ -10675,6 +10675,35 @@ footer {
   animation-name: slideIn;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5rem auto;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#closeBtn {
+  border: none;
+  background: none;
+  position: absolute;
+  top: -3rem;
+  right: -3rem;
+}
+
 nav {
   position: fixed;
   height: 120px;
@@ -10756,6 +10785,20 @@ nav {
   }
   .submenu {
     border: none;
+  }
+
+  .modal-content {
+    margin: 7rem auto;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #closeBtn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
   }
 }
 /* ============ small devices .end// ============ */
